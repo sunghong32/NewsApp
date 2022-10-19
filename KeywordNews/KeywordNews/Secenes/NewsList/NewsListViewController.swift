@@ -31,7 +31,7 @@ final class NewsListViewController: UIViewController {
 
         tableView.register(
             NewsListTableViewHeaderView.self,
-            forHeaderFooterViewReuseIdentifier: NewsListTableViewHeaderView.identifier 
+            forHeaderFooterViewReuseIdentifier: NewsListTableViewHeaderView.identifier
         )
 
         tableView.refreshControl = refreshControl
@@ -62,6 +62,12 @@ extension NewsListViewController: NewsListProtocol {
 
     func endRefreshing() {
         refreshControl.endRefreshing()
+    }
+
+    func moveToNewsWebViewController() {
+        let newsWebViewController = NewsWebViewController()
+
+        navigationController?.pushViewController(newsWebViewController, animated: true)
     }
 }
 
