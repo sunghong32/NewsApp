@@ -17,7 +17,7 @@ protocol NewsSearchManagerProtocol {
     )
 }
 
-struct NewsSearchManager {
+struct NewsSearchManager: NewsSearchManagerProtocol {
     func request(
         from keyword: String,
         start: Int,
