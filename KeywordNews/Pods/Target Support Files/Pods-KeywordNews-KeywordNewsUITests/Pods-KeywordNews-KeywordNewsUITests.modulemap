@@ -1,0 +1,6 @@
+framework module Pods_KeywordNews_KeywordNewsUITests {
+  umbrella header "Pods-KeywordNews-KeywordNewsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

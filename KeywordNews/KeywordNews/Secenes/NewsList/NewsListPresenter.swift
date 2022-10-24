@@ -119,7 +119,6 @@ private extension NewsListPresenter {
             self?.newsList += newValue
             self?.currentPage += 1
             self?.viewController?.reloadTableView()
-
             self?.viewController?.endRefreshing()
         }
     }
